@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1740948293 source:c:\users\adams\onedrive\pulpit\szyfr_cezara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
