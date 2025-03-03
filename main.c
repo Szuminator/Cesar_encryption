@@ -4,14 +4,37 @@
 #include <ctype.h>
 
 int main() {
+    printf("SZYFR CEZARA\n\n");
+    printf("1. Wyjscie\n");
+    printf("2. Szyfruj\n");
+    printf("3. Odszyfruj\n");
 
-    char text[] = "hitler nie wiedzial o ";
+    int choose;
     int key;
 
-    printf("SZYFR CEZARA\n\n");
-    printf("Podaj klucz: ");
-    scanf("%d", &key);
+    for(;;){
+        printf("Podaj nr: \n");
+        scanf("%d", &choose);
 
+        if(choose==1){
+            break;
+        }
+        else if(choose==2){
+            //czy plik czy zdanie
+            //funkjca szyfrujaca
+        }
+        else if(choose==3){
+            //czy plik czy zdanie
+            //funkjca deszyfrujaca
+        }
+        else{
+            printf("nie ma takiej opcji(wcisnij enter)\n");
+            getchar();
+            getchar();
+        }
+    }
+
+    char text[100];
     char secret[100];
 
     //encryption
@@ -42,8 +65,7 @@ int main() {
             nosecret[i] = secret[i];
         }
     }
-                                         /*ZAMIE— SZYFROWANIE I DESZYFROWANIE NA OSOBNE FUNKCJE UØYWAJ•C WSKAèNIK”W I ZROB:
-                                             1.exit BY WYJå∆ 2.zaszyfruj plik ORAZ odszyfruj 3. odszyfr i zszyfr zdanie*/
+
     nosecret[strlen(secret)] = "\0";
     printf("%s \n", nosecret);
 
